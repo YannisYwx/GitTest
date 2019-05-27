@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ruler="http://schemas.android.com/apk/res/com.yannis.android.ui"
+    xmlns:ts="http://schemas.android.com/apk/res/com.yannis.android.ui"
+    xmlns:circle="http://schemas.android.com/apk/res/com.yannis.android.ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black1"
+    tools:context=".MainActivity" >
+
+    <!--
+         <com.yannis.android.ui.widget.RulerView
+        android:id="@+id/ui_rulerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:padding="25dp"
+        android:visibility="gone"
+        ruler:arrowLineColor="#A5D448"
+        ruler:maxData="1440"
+        ruler:minData="0"
+        ruler:scaleLineColor="@color/white"
+        ruler:unit="分钟" 
+        ruler:unitBig="小时" 
+        ruler:title="睡眠时间"
+        ruler:halfScreenLines="10"
+        ruler:stepLineNum="3"
+        ruler:stepData="60" />
+
+    -->
+    
+    <com.yannis.android.ui.widget.RulerView
+        android:id="@+id/ui_rulerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:visibility="gone"
+        ruler:arrowLineColor="#A5D448"
+        ruler:halfScreenLines="15"
+        ruler:maxData="30000"
+        ruler:minData="1000"
+        ruler:scaleLineColor="@color/white"
+        ruler:stepData="100"
+        ruler:stepLineNum="5"
+        ruler:title="运动目标"
+        ruler:unit="步" />
+
+    <com.yannis.android.ui.widget.PointLineView
+        android:id="@+id/ui_pointLineView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.yannis.android.ui.widget.CalendarView
+        android:id="@+id/ui_calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.yannis.android.ui.widget.TextSwithView
+        android:id="@+id/ui_textSwithView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_text"
+        android:visibility="gone"
+        ts:tsSelectTextColor="#ef5543"
+        ts:tsTextCenter="/"
+        ts:tsTextColor="@color/white"
+        ts:tsTextLeft="开"
+        ts:tsTextRight="关"
+        ts:tsTextSize="24sp" />
+
+    <com.yannis.android.ui.widget.CircleImageView
+        android:id="@+id/ui_circleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/header"
+        circle:border_color="#16A275"
+        circle:border_width="2dp" 
+        android:visibility="gone"
+        />
+
+    <com.yannis.android.ui.widget.ScanView
+        android:id="@+id/ui_scanView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" 
+        android:visibility="gone"/>
+    
+    <com.yannis.android.ui.test.SportPieView
+        android:id="@+id/ui_sportPieView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <ImageView 
+        android:id="@+id/radar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/radar"
+        android:visibility="gone"/>
+    <com.yannis.android.ui.widget.ProgressView 
+        android:id="@+id/progressView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="#22ffbbee"/>
+     <com.yannis.android.ui.widget.ProgressView1 
+        android:id="@+id/progressView1"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="#22ffbbee"/>
+     <com.yannis.android.ui.widget.RebView 
+        android:id="@+id/rebView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="#22ffbbee"/>
+     <com.yannis.android.ui.widget.DataScrollView 
+        android:id="@+id/dataScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+     <com.yannis.android.ui.widget.ClockView 
+        android:id="@+id/clockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+     <com.yannis.android.ui.widget.BatteryView 
+        android:id="@+id/batteryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+   
+
+</RelativeLayout>

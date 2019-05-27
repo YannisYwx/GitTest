@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yannis_View</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="unit_step">步</string>
+    <string name="unit_kilometer">公里</string>
+    <string name="unit_calorie">卡路里</string>
+    <string name="unit_hour_en">H</string>
+    <string name="unit_minute_en">min</string>
+    <string name="sport_goal">每日目标：%s步</string>
+    <string name="sport_percent">已完成：%d%%</string>
+    <string name="noData">没有数据</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    >
+
+    <ImageButton
+        android:id="@+id/ib_bar_left"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+         android:background="@drawable/selector_drawer_pressed"
+        android:contentDescription="@string/app_name" />
+	<ImageButton
+        android:id="@+id/ib_bar_right_ot"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/ib_bar_right"
+        android:background="@drawable/selector_drawer_pressed"
+        android:contentDescription="@string/app_name" />
+    <ImageButton
+        android:id="@+id/ib_bar_right"
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_drawer_pressed"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:ellipsize="middle"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+    
+    <RadioGroup
+        android:id="@+id/rg_bar_group"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_toggle_btn_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp" 
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_bar_left"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_toggle_btn_l"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="市场"
+            android:textColor="@color/selector_color_toggle_btn"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_bar_right"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_toggle_btn_l"
+            android:button="@null"
+            android:gravity="center"
+            android:text="正在进行"
+            android:textColor="@color/selector_color_toggle_btn"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</RelativeLayout>
